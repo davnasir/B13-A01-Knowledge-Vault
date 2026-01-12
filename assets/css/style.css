@@ -93,11 +93,20 @@ nav {
 .banner-top {
     background-color: #ffffff;
     color: var(--Secndary-color);
-    padding: 12px 8px;
+    padding: 12px 7px 8px 8px;
     border-radius: 50px;
-    width: 14%;
+    width: 16%;
     margin: 0 auto;
     margin-bottom: 20px;
+    display: flex;
+    text-align: center;
+
+    img {
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: -5px;
+        width: 20px;
+    }
 
     h4 {
         font-size: 16px;
@@ -192,32 +201,79 @@ nav {
     align-items: center;
 }
 
+.brain-content {
+    padding-left: 40px;
+
+    h4 {
+        font-size: 16px;
+        font-weight: 500;
+        text-transform: uppercase;
+        padding-bottom: 10px;
+        color: #469165;
+    }
+
+    h2 {
+        font-size: 48px;
+        font-weight: bold;
+        color: var(--font-color-primary);
+        padding-bottom: 10px;
+    }
+
+    p {
+        color: #627382;
+        padding-bottom: 10px;
+    }
+
+    ul {
+        list-style: url(/assets/CheckCircle.png);
+        padding-left: 25px;
+        color: var(--primary-color);
+    }
+}
 
 /* Early Access Section  */
 .early {
     background-color: #f7f6f2;
     border-radius: 4px;
-    width: 71%;
+    width: 65%;
     margin: 0 auto;
     text-align: center;
     justify-content: center;
     align-items: center;
-    padding-top: 50px;
+    padding: 50px 60px;
+    margin-top: 100px;
 
     h1 {
         font-size: 40px;
         font-weight: 500;
+        padding: 0 30px;
     }
 
     p {
-        padding: 20px;
+        width: 38%;
+        margin: 0 auto;
+        padding: 20px 20px 30px 20px;
     }
 
 }
 
+.list-item ul {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.list-item ul li:first-child {
+    list-style: none;
+    margin-left: 20px;
+}
+
 /* Footer Section  */
 footer {
-    background-color: var(--font-color-primary);
+    margin-top: 100px;
+    padding: 50px 0px 30px 0px;
+    background-color: var(--primary-color);
     color: #ffffff;
 }
 
@@ -228,8 +284,37 @@ footer {
     justify-content: space-between;
 }
 
+.footer-social-icon {
+    color: #ffffff;
+    align-items: center;
+    padding-bottom: 10px;
+
+    h2 {
+        padding-bottom: 10px;
+    }
+
+    .social-icon a i {
+        color: var(--font-color-primary);
+        background-color: #ffffff;
+        padding: 7px 5px 7px 5px;
+        border-radius: 50%;
+    }
+}
+
 .copyright {
+    padding-top: 30px;
     width: 71%;
     margin: 0 auto;
     text-align: center;
+
+    hr {
+        height: 1px;
+        border: none;
+        background-color: #2e4256;
+    }
+
+    h4 {
+        padding-top: 12px;
+        color: #fafafa;
+    }
 }
