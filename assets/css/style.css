@@ -1,10 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
+* {
+    margin: 0;
+    padding: 0;
+}
 
 body {
-    font-family: 'hind_siliguri';
-    font-weight: normal;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
     font-size: 16px;
+    font-weight: normal;
     box-sizing: border-box;
 }
 
@@ -21,17 +26,210 @@ ul {
 }
 
 :root {
-    --primary_color: #001931;
+    --primary-color: #001931;
+    --Secndary-color: #30B868;
+    --font-color-primary: #000000;
+}
+
+a {
+    text-decoration: none;
+}
+
+.btn {
+    font-size: 16px;
+    background-color: #30B868;
+    color: white;
+    padding: 16px 12px;
+    border-radius: 4px;
+    font-weight: 600;
+    cursor: pointer;
+    border: none;
+}
+
+.btn:hover {
+    background: #ffffff;
+    color: var(--primary-color);
+    border: 1px solid var(--primary-color);
 }
 
 /* Nav Section  */
+header {
+    width: 71%;
+    margin: 0 auto;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 0;
+}
+
+.nav-link ul {
+    display: flex;
+    gap: 32px;
+
+    li {
+        list-style: none;
+
+        a {
+            color: var(--font-color-primary);
+            font-weight: 500;
+        }
+    }
+}
 
 /* Banner Section   */
+.banner {
+    background-image: url(/assets/hero-bg.png);
+    color: #ffffff;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    padding: 110px 0 130px 0;
+}
+
+.banner-top {
+    background-color: #ffffff;
+    color: var(--Secndary-color);
+    padding: 12px 8px;
+    border-radius: 50px;
+    width: 14%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+
+    h4 {
+        font-size: 16px;
+    }
+
+}
+
+.banner-title {
+    h1 {
+        font-size: 72px;
+        font-weight: 700;
+    }
+
+    span {
+        color: #30B868;
+        margin-bottom: 20px;
+    }
+
+    p {
+        font-size: 18px;
+        padding: 13px 0;
+    }
+}
+
+.banner-button {
+    padding-top: 20px;
+
+    button {
+        margin-left: 10px;
+    }
+}
 
 /* Notes Section  */
+.notes {
+    background-color: #fbfbfb;
+}
+
+.notes-title {
+    text-align: center;
+
+    h1 {
+        padding: 100px 0 30px 0;
+        font-size: 48px;
+        font: bold;
+        color: var(--font-color-primary);
+    }
+
+    p {
+        padding-bottom: 30px;
+        color: #627382;
+        line-height: 20px;
+    }
+}
+
+.notes-divistion {
+    width: 71%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    text-align: center;
+    gap: 15px;
+
+    .card {
+        border-radius: 4px;
+        background-color: #ffffff;
+        padding: 70px 30px 30px 30px;
+        margin-bottom: -20px;
+        box-shadow: 1px solid var(--font-color-primary);
+
+        img {
+            background-color: #f95555;
+            padding: 15px;
+            border-radius: 50%;
+            padding-bottom: 13px;
+        }
+
+        h2 {
+            font-size: 24px;
+            font-weight: 500;
+            color: var(--font-color-primary);
+        }
+    }
+}
 
 /* Second Brain Section  */
+.brain {
+    padding-top: 90px;
+    width: 71%;
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
+}
+
 
 /* Early Access Section  */
+.early {
+    background-color: #f7f6f2;
+    border-radius: 4px;
+    width: 71%;
+    margin: 0 auto;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+
+    h1 {
+        font-size: 40px;
+        font-weight: 500;
+    }
+
+    p {
+        padding: 20px;
+    }
+
+}
 
 /* Footer Section  */
+footer {
+    background-color: var(--font-color-primary);
+    color: #ffffff;
+}
+
+.footer-content {
+    width: 71%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.copyright {
+    width: 71%;
+    margin: 0 auto;
+    text-align: center;
+}
